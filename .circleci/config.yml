@@ -16,7 +16,7 @@ jobs:
           command: |
             conda update -n base -c defaults conda
             conda create --name calculator
-            conda activate calculator
+            source activate calculator
             conda install flake8 pytest pytest-cov
       # Step 3: run linter and tests
       - run:
